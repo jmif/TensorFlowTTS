@@ -43,15 +43,14 @@ requirements = {
         "g2p_en",
         "dataclasses",
     ],
-    "extras_require": {
-      "gpu": ["tensorflow-gpu==2.6.2", "tensorflow-addons>=0.10.0"],
-      "metal": ["tensorflow-metal", "tfa-nightly"],
-    },
     "setup": ["numpy", "pytest-runner",],
     "test": [
         "pytest>=3.3.0",
         "hacking>=1.1.0",
     ],
+
+    "gpu": ["tensorflow-gpu==2.6.2", "tensorflow-addons>=0.10.0"],
+    "metal": ["tensorflow-metal", "tfa-nightly"],
 }
 
 # TODO(@dathudeptrai) update console_scripts.
